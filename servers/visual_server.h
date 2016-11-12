@@ -129,6 +129,7 @@ public:
 	virtual Image texture_get_data(RID p_texture,CubeMapSide p_cube_side=CUBEMAP_LEFT) const=0;
 	virtual void texture_set_flags(RID p_texture,uint32_t p_flags) =0;
 	virtual uint32_t texture_get_flags(RID p_texture) const=0;
+	virtual uint32_t texture_get_texid(RID p_texture) const=0;
 	virtual Image::Format texture_get_format(RID p_texture) const=0;
 	virtual uint32_t texture_get_width(RID p_texture) const=0;
 	virtual uint32_t texture_get_height(RID p_texture) const=0;
@@ -670,6 +671,7 @@ public:
 	virtual void camera_set_environment(RID p_camera,RID p_env)=0;
 	virtual RID camera_get_environment(RID p_camera) const=0;
 
+///@TODO maybe clean this up and purely use aspect ratio mode?
 	virtual void camera_set_use_vertical_aspect(RID p_camera,bool p_enable)=0;
 	virtual bool camera_is_using_vertical_aspect(RID p_camera,bool p_enable) const=0;
 

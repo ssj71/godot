@@ -117,6 +117,20 @@ Files extracted from the upstream source:
 
 TODO.
 
+## openvr
+
+- Upstream: https://github.com/ValveSoftware/openvr
+- Version: 1.0.6
+- License: Valve (looks like MIT)
+
+Files extracted from upstream source:
+
+- 'headers/*'
+- 'lib/*'
+- 'bin/*'
+- LICENSE
+- README.md
+
 
 ## opus
 
